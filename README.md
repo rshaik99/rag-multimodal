@@ -1,4 +1,4 @@
-# rag-lab
+# rag-multimodal
 
 A grounded, citation-verified RAG pipeline implemented **twice** — once in
 LlamaIndex, once in LangChain — so the same design decisions (hybrid search,
@@ -70,7 +70,7 @@ tracks, `/reset` clears history, `exit` quits.
 
 ```bash
 git clone <this-repo>
-cd rag-lab
+cd rag-multimodal
 python -m venv .venv && .venv\Scripts\activate      # Windows
 pip install -r requirements.txt
 
