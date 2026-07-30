@@ -1,0 +1,59 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Step D - LangChain (remote work query)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "langchain_pipeline.step_d_cited_answer",
+            "args": ["what is the company's policy on remote work?"],
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Step D - LlamaIndex (remote work query)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "llamaindex_pipeline.step_d_cited_answer",
+            "args": ["what is the company's policy on remote work?"],
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Step C - LangChain (retrieval comparison)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "langchain_pipeline.step_c_retrieve_rerank",
+            "args": ["what caused ERR-4417?"],
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Step C - LlamaIndex (retrieval comparison)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "llamaindex_pipeline.step_c_retrieve_rerank",
+            "args": ["what caused ERR-4417?"],
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "python": "${workspaceFolder}/.venv/Scripts/python.exe",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        }
+    ]
+}

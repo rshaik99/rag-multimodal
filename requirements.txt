@@ -1,0 +1,33 @@
+# ---------- core ----------
+python-dotenv>=1.0.1
+qdrant-client>=1.12.0
+fastembed>=0.4.2                 # local ONNX sparse (BM25/SPLADE) embeddings
+pymupdf4llm>=0.0.17              # local layout-aware PDF -> Markdown (lab default parser)
+tiktoken>=0.8.0
+colorama>=0.4.6                  # ANSI colors for chatbot.py (Windows-safe)
+
+# ---------- LlamaIndex track ----------
+llama-index-core>=0.12.0
+llama-index-embeddings-openai>=0.3.0
+llama-index-llms-openai>=0.3.0
+llama-index-vector-stores-qdrant>=0.4.0
+llama-index-postprocessor-cohere-rerank>=0.3.0   # optional, needs COHERE_API_KEY
+
+# ---------- LangChain track ----------
+langchain>=0.3.7
+langchain-core>=0.3.15
+langchain-openai>=0.2.8
+langchain-qdrant>=0.2.0
+langchain-community>=0.3.5
+langchain-text-splitters>=0.3.2
+langgraph>=0.2.45
+langchain-cohere>=0.3.1                          # optional, needs COHERE_API_KEY
+langchain-classic                                # langchain>=1.0 moved ContextualCompressionRetriever /
+                                                  # CrossEncoderReranker here; step_c imports it directly
+
+# ---------- optional upgrades ----------
+# llama-cloud-services>=0.6.0                    # LlamaParse (API v2) - best table fidelity
+# docling>=2.0.0                                 # free local layout parser w/ TableFormer
+# sentence-transformers>=3.3.0                   # local BAAI/bge-reranker-v2-m3 (no API key)
+# ragas>=0.2.6                                   # evaluation
+# reportlab>=4.2.0                               # only needed by make_sample_docs.py
