@@ -69,7 +69,7 @@ tracks, `/reset` clears history, `exit` quits.
 ## Quickstart
 
 ```bash
-git clone <this-repo>
+git clone https://github.com/rshaik99/rag-multimodal.git
 cd rag-multimodal
 python -m venv .venv && .venv\Scripts\activate      # Windows
 pip install -r requirements.txt
